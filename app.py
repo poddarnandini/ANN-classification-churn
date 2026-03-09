@@ -1,12 +1,12 @@
 import streamlit as st
 import numpy as np
-import tensorflow as tf
+import keras
 import pandas as pd
 import pickle
 from sklearn.preprocessing import StandardScaler,LabelEncoder,OneHotEncoder 
 
 #Load the train model
-model=tf.keras.models.load_model('model.h5')
+model=keras.models.load_model('model.h5')
 #Load the scaler,one hot encoder and Label Encoder
 with open('label_encoder_gender.pkl','rb') as file:
     label_encoder_gender=pickle.load(file)
