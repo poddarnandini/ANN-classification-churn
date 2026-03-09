@@ -2,5 +2,5 @@ streamlit
 numpy==2.0.0
 pandas==2.2.2
 scikit-learn==1.5.2
-keras
+tf-keras
 h5py
